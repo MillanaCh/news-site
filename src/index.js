@@ -5,13 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import GeneralAuthProvider from "./context/FirebaseAuthContext";
 import FirestoreProvider from "./context/FirebaseFirestoreContext";
+import GeneralProvider from "./context/GeneralNews";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <FirestoreProvider>
       <GeneralAuthProvider>
-        <App />
+        <Router>
+          <App />
+        </Router>
       </GeneralAuthProvider>
     </FirestoreProvider>
   </React.StrictMode>

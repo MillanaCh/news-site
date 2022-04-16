@@ -1,5 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-App{
-  font-family:'Inter', sans-serif;;
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
 }
+/* Header Part  with responsiveness*/
+.ul-part{
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.each-ul{
+  text-decoration: none;
+  color:whitesmoke;
+  margin-left: 25px;
+}
+.img-logo{
+  height: 28px;
+  padding: 10px;
+}
+.btn{
+  background-color: #3e88c9;
+  border: none;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 500px) {
+  * {
+    font-size: 18px;
+  }
+  .each-ul{
+    min-width: 100px;
+  }
+  .img-logo{
+    height: 35px;
+  }
+}
+
+
