@@ -10,7 +10,7 @@ export default function About() {
         <Grid item xs={4} md={2}>
           <List>
             <ListItemButton>
-              <Link to="about-us">About us</Link>
+              <Link to="about-us">About Bishkek News</Link>
             </ListItemButton>
             <Divider/>
             <ListItemButton>

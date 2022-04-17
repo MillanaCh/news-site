@@ -6,10 +6,10 @@ import Login from "./PagesRouter/Login";
 import AddNews from "./PagesRouter/dashboard-pages/AddNews";
 import SeeAllNews from "./PagesRouter/dashboard-pages/SeeAllNews";
 import About from "./PagesRouter/About";
-import aboutUs from "./PagesRouter/about-routes.jsx/about-us";
-import locations from "./PagesRouter/about-routes.jsx/locations";
-import ourTeam from "./PagesRouter/about-routes.jsx/our-team";
-import contactUs from "./PagesRouter/about-routes.jsx/contact-us";
+import AboutUs from "./PagesRouter/about-routes.jsx/About-us";
+import Locations from "./PagesRouter/about-routes.jsx/Locations";
+import OurTeam from "./PagesRouter/about-routes.jsx/Our-team";
+import ContactUs from "./PagesRouter/about-routes.jsx/Contact-us";
 function App() {
   return (
     <>
@@ -20,10 +20,10 @@ function App() {
           <Route path="see-news" element={<SeeAllNews />} />
         </Route>
         <Route path="/about" element={<About/>}>
-          <Route path="about-us" element={<aboutUs/>}/>
-          <Route path="contact-us" element={<locations/>}/>
-          <Route path="our-team" element={<ourTeam/>}/>
-          <Route path="locations" element={<contactUs/>}/>
+          <Route path="about-us" element={<AboutUs/>}/>
+          <Route path="contact-us" element={<ContactUs/>}/>
+          <Route path="our-team" element={<OurTeam/>}/>
+          <Route path="locations" element={<Locations/>}/>
         </Route>
         <Route path="/login" element={<Login />} />
       </Routes>

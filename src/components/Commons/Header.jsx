@@ -21,7 +21,7 @@ export default function Header() {
             <Link to="/" className="each-ul">Home</Link>
             <Link to="/admin-dashboard" className="each-ul">Dashboard</Link>
             <Link to="/about" className="each-ul">About</Link>
-            {!user ? (<Link to="/login" className="each-ul"><button className='btn'><RiAdminLine/></button></Link>) : <button className='btn' onClick={() => logOut()}><RiUserFollowLine/></button>}
+            {!user ? (<Link to="/login" className="each-ul"><button className='btn'>Login<RiAdminLine/></button></Link>) : <button className='btn' onClick={() => logOut()}><RiUserFollowLine/></button>}
         </Box>
       </Grid>
     </Grid>
