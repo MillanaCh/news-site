@@ -2,7 +2,7 @@
 
 * {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 14px;
+  font-size: 10px;
 }
 /* Header Part  with responsiveness*/
 .ul-part{
@@ -16,26 +16,26 @@
   color:whitesmoke;
   margin-left: 25px;
 }
+.each-ul:hover{
+  color:rgb(167, 164, 160)
+}
 .img-logo{
   height: 28px;
   padding: 10px;
 }
 .btn{
-  background-color: #3e88c9;
-  border: none;
-  color:white;
-  padding: 10px;
-  border-radius: 5px;
+  border: 1px solid white;
+  border-radius: 6px;
 }
 @media screen and (min-width: 500px) {
   * {
-    font-size: 18px;
+    font-size: 14px;
   }
   .each-ul{
     min-width: 100px;
   }
   .img-logo{
-    height: 35px;
+    height: 25px;
   }
 }
 
